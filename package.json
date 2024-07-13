@@ -1,0 +1,19 @@
+{
+  "name": "ltdlg_edu_be_admin",
+  "module": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "bun run server.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
+}
