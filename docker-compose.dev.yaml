@@ -19,7 +19,8 @@ services:
     environment: 
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
-      PGADMIN_LISTEN_PORT: ${PGA_PORT}
-      PGADMIN_LISTEN_ADDRESS: ${PGA_ADDRESS}
+      PGAMIN_LISTEN_PORT: ${PGA_PORT} 
     ports: 
-      - ${PGA_PORT}:${PGA_PORT}
+      - ${PGA_PORT}:${CONTAINER_PORT}
+    depends_on:
+      - ltdlg-database
