@@ -1,5 +1,5 @@
 import express from "express";
-import { ping } from "./src/api/controller/ping";
+import { ping } from "./api/controller/ping";
 
 const app = express();
 

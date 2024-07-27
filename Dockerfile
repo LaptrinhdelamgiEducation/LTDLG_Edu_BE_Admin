@@ -1,3 +1,6 @@
-FROM postgres
+FROM oven/bun:canary-alpine AS build
+WORKDIR /admin-build
+COPY . .
+RUN bun install
 
-COPY ./schema.sql /docker-entrypoint-initdb.d/
+ENTRYPOINT [ "bun", "start" ]

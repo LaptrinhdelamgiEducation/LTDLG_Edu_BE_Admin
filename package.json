@@ -2,8 +2,10 @@
   "name": "ltdlg_edu_be_admin",
   "module": "server.js",
   "type": "module",
+  "main": "src/server.js",
   "scripts": {
-    "start": "bun --watch run server.js"
+    "start": "bun --watch run src/server.js",
+    "build": ""
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -14,6 +16,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "knex": "^3.1.0",
     "pg": "^8.12.0"
   }
 }
